@@ -15,17 +15,20 @@ const Contact = ({
       <main className="page">
         <section className="contact-page">
           <article className="contact-info">
-            <h3>Contact me</h3>
+            <h3>Kontakta mig</h3>
             <p>
-              Hot chicken flannel man braid migas subway tile JOMO pinterest
-              labore blog pug in enamel pin yuccie. Culpa banh mi put a bird on
-              it, pour-over est ascot flannel bodega boys man bun cred tonx jean
-              shorts migas franzen asymmetrical.
+              Har du ett recept du rekommenderar mig att testa? Eller är det
+              något recept som saknar ingrediens? Hör gärna av dig! Det kan vara
+              allt från recept till tankar kring hemsidan till ett enkelt hej.
             </p>
             <p>
-              Tattooed venmo tilde, knausgaard sus hammock umami JOMO iPhone
-              narwhal tonx unicorn. Hell of forage retro palo santo banjo vegan
-              +1.
+              Min tanke kring denna del sida är inte att jag har en förväntning
+              om att aktivt få meddelanden inskickade. Eftersom jag utvecklade
+              denna hemsida i ett lärande syfte handlade det mer om kunskapen
+              kring hur man skapar den funktionaliteten framför hur relevant det
+              faktiskt är för just denna sida. Därför väljer jag att ha kvar
+              denna sida som resultat av min lärdom och som potentiellt redskap
+              för vidare lärning.
             </p>
           </article>
           <article>
@@ -35,25 +38,25 @@ const Contact = ({
               method="POST"
             >
               <div className="form-row">
-                <label htmlFor="name">your name</label>
+                <label htmlFor="name">ditt namn</label>
                 <input type="text" name="name" id="name" />
               </div>
               <div className="form-row">
-                <label htmlFor="email">your email</label>
+                <label htmlFor="email">din email</label>
                 <input type="text" name="email" id="email" />
               </div>
               <div className="form-row">
-                <label htmlFor="message">message</label>
+                <label htmlFor="message">meddelande</label>
                 <textarea name="message" id="message"></textarea>
               </div>
               <button type="submit" className="btn block">
-                submit
+                skicka
               </button>
             </form>
           </article>
         </section>
         <section className="featured-recipes">
-          <h5>Look at this</h5>
+          <h5>ta en titt!</h5>
           <RecipesList recipes={recipes} />
         </section>
       </main>

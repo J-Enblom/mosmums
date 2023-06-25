@@ -1,10 +1,10 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
-import { FiAlignJustify } from "react-icons/fi"
-import logo from "../assets/images/logo.svg"
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import { FiAlignJustify } from "react-icons/fi";
+import logo from "../assets/images/logo.svg";
 
 const Navbar = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -23,7 +23,7 @@ const Navbar = () => {
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
-            home
+            hem
           </Link>
           <Link
             to="/recipes"
@@ -31,7 +31,7 @@ const Navbar = () => {
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
-            recipes
+            recept
           </Link>
           <Link
             to="/mealplan"
@@ -39,33 +39,31 @@ const Navbar = () => {
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
-            mealplan
+            målplanering
           </Link>
           <Link
-            to="/tags"
-            className="nav-link"
-            activeClassName="active-link"
-            onClick={() => setShow(false)}
-          >
-            tags
-          </Link>
+          //to="/tags"
+          //className="nav-link"
+          //activeClassName="active-link"
+          //onClick={() => setShow(false)}
+          ></Link>
           <Link
             to="/about"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
-            about
+            om
           </Link>
           <div className="nav-link contact-link">
             <Link to="/contact" className="btn" onClick={() => setShow(false)}>
-              contact
+              kontakt
             </Link>
           </div>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

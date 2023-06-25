@@ -18,7 +18,7 @@ const Tags = ({ data }) => {
             return (
               <Link to={`/tags/${tagSlug}`} key={index} classname="tag">
                 <h5>{text}</h5>
-                <p>{value} recipes</p>
+                <p>{value} recept</p>
               </Link>
             );
           })}

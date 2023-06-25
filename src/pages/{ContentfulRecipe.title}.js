@@ -54,7 +54,7 @@ const RecipeTemplate = ({ data }) => {
               </div>
               {/* tags */}
               <p className="recipe-tags">
-                Tags:
+                Taggar:
                 {tags.map((tag, index) => {
                   const tagSlug = slugify(tag, { lower: true });
                   return (
@@ -68,20 +68,6 @@ const RecipeTemplate = ({ data }) => {
           </section>
           {/* rest of the content*/}
           <section className="recipe-content">
-            <article>
-              <h4>Instruktioner</h4>
-              {instructions.map((item, index) => {
-                return (
-                  <div key={index} className="single-instruction">
-                    <header>
-                      <p>steg {index + 1}</p>
-                      <div></div>
-                    </header>
-                    <p>{item}</p>
-                  </div>
-                );
-              })}
-            </article>
             <article className="second-column">
               <div>
                 <h4>ingredienser</h4>
@@ -103,6 +89,20 @@ const RecipeTemplate = ({ data }) => {
                   );
                 })}
               </div>
+            </article>
+            <article>
+              <h4>Instruktioner</h4>
+              {instructions.map((item, index) => {
+                return (
+                  <div key={index} className="single-instruction">
+                    <header>
+                      <p>steg {index + 1}</p>
+                      <div></div>
+                    </header>
+                    <p>{item}</p>
+                  </div>
+                );
+              })}
             </article>
           </section>
         </div>

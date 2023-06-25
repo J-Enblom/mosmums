@@ -505,7 +505,7 @@ form > *:last-child {
   .about-page {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 400px;
+    height: 600px;
   }
   .about-img {
     height: 100%;
@@ -750,7 +750,7 @@ form > *:last-child {
 }
 @media screen and (min-width: 992px) {
   .recipe-content {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
   }
 }
 .single-instruction header {
