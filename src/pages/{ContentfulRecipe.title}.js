@@ -18,7 +18,7 @@ const RecipeTemplate = ({ data }) => {
     image,
   } = data.contentfulRecipe;
   const pathToImage = getImage(image);
-  const { tags, instructions, ingredients, tools } = content;
+  const { tags, instructions, ingredients } = content;
   return (
     <Layout>
       <SEO title={title} description={description} />
@@ -79,16 +79,6 @@ const RecipeTemplate = ({ data }) => {
                   );
                 })}
               </div>
-              <div>
-                <h4>redskap</h4>
-                {tools.map((item, index) => {
-                  return (
-                    <p key={index} className="single-tool">
-                      {item}
-                    </p>
-                  );
-                })}
-              </div>
             </article>
             <article>
               <h4>Instruktioner</h4>
@@ -120,7 +110,6 @@ export const query = graphql`
         ingredients
         instructions
         tags
-        tools
       }
       description {
         description
